@@ -1,0 +1,21 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnA1WGJ9YUJAPFMwFitbWxgIAtaYhuw==": "ask_name_appointment",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnA1WGJ9YUJAPFMwFitYSMhKbHiJNjgUAqG9Epg==": "action_listen",
+    "eJwtykEKgCAQQNGreIAWtoq8SsagMqBgU6gThHj3lNq9D3+rbRL1SniDcSWcpET9AGQOVOKPGHJB6i9nTP0J1LMo8WiWEg2D0zyjWRjigLPOgx+yK7W2v+HcJoI=": "yêu_cầu_lịch_hẹn_co_thời_gian",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMqbUwCA1sTQ+OabUMDXRvDQ+B8RITkrOiM8AsZIs82oJWEGMGfHJ+fElYE5KSmZ8emYi2W6JBQAdh1n9": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbEEKJecEZ+dkZhbWxsLANJHHqY=": "action_dat_lich",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbEEKJecEZ+dkZhbS5xZMD0ETYsFAK4APEQ=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBkQRbj0xgIABJMyBA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnA1WWFsbCwA+FByt": "ask_name",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnA1WWEvIGJg6PCbEAgDZVzV8": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbEEKJecEZ+dkZgb7xRcWxsLAC8TH5o=": "appointment_bs",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbEEKJecEZ+dkZgb7xRcS8i4goJ8oN5coOb4pGJizIsFANeMPfo=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJDM3Nb48vyg7PiU/uSS/qLY2FgAxXiAJ": "DoctorTime",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJDM3Nb48vyg7PiU/uSS/qJaAcS5gVSBdxJgVCwD2YTzv": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJCMxL7u2NhYA6O8bZA==": "Thank",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJCMxL7uWgBkQRbj0xgIA9woxoQ==": "action_listen"
+  }
+}

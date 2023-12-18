@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-bacsi",
+      "2": "I-bacsi",
+      "3": "L-bacsi",
+      "4": "U-bacsi",
+      "5": "B-ca",
+      "6": "I-ca",
+      "7": "L-ca",
+      "8": "U-ca",
+      "9": "B-name",
+      "10": "I-name",
+      "11": "L-name",
+      "12": "U-name",
+      "13": "B-thu",
+      "14": "I-thu",
+      "15": "L-thu",
+      "16": "U-thu",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-bacsi": 1,
+      "I-bacsi": 2,
+      "L-bacsi": 3,
+      "U-bacsi": 4,
+      "B-ca": 5,
+      "I-ca": 6,
+      "L-ca": 7,
+      "U-ca": 8,
+      "B-name": 9,
+      "I-name": 10,
+      "L-name": 11,
+      "U-name": 12,
+      "B-thu": 13,
+      "I-thu": 14,
+      "L-thu": 15,
+      "U-thu": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

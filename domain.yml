@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - dat_lich_kham
+  - yêu_cầu_lịch_hẹn
+  - Thank
+  - suppot
+  - ask_name
+  - ask_name_appointment
+  - dat_lich_kham_BS
+  - Time_work_doctor
+  - List_BS
+
+actions:
+  - action_dat_lich
+  - ask_name
+  - ask_name_appointment
+  - yêu_cầu_lịch_hẹn_co_thời_gian
+  - appointment_bs
+  - greet
+  - Thank
+  - DoctorTime
+  - Support
+  - goodbye
+  - ActionListDoctors
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+entities:
+  - bacsi
+  - time
+  - name
+  - thu
+  - ca
+
+responses:
+  utter_greet:
+    - text: "Chào bạn! Tôi có thể giúp gì cho bạn?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 120
+  carry_over_slots_to_new_session: true

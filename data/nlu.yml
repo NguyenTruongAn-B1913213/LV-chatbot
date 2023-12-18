@@ -1,0 +1,605 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Chào buổi sáng!
+      - Chào buổi chiều!
+      - Chào buổi tối!
+      - chào bạn
+      - xin chào
+      - Hey
+      - chào
+      - cu
+      - hey
+      - alo
+      - hi
+      - hello+
+      - hù
+      - Xin chào bạn nhé
+      - Chào
+      - Xin chào
+      - Hôm nay bạn thế nào
+      - bạn có ở đó không
+      - bạn đâu rồi
+      - alo alo
+      - alo
+      - lô lô
+      - đâu rồi huynh đài
+      - bot ơí ời ơi
+      - chào bot
+      - bạn đang làm gì thế
+      - chào bạn hiền
+      - xin chào
+      - Hey
+      - chào
+      - Xin chào mọi người
+      - Hi cả nhà
+      - Greetings!
+      - Hello các bạn
+      - Hế nhô!
+      - Chào buổi sáng
+      - Chào buổi chiều
+      - Chào buổi tối
+      - Hôm nay thế nào?
+      - Có ai ở đây không?
+      - Hey bạn.
+      - chào anh. 
+      - chào chị.
+      - chào em.
+      - chào bác sĩ.
+
+  - intent: goodbye
+    examples: |
+      - tạm biệt
+      - bye
+      - goodbye
+      - hẹn gặp lại
+      - tắt đi
+      - gặp lại sau
+      - Bye nhé
+      - Tôi phải đi rồi, hẹn gặp lại sau nhé
+      - Tạm biệt và chăm sóc bản thân
+      - Mình nói chuyện sau nhé, tạm biệt
+      - Tôi sẽ nhớ bạn, tạm biệt
+      - Bye, hy vọng gặp lại bạn sớm
+      - gặp lại bạn sau
+      - hẹn gặp lại bạn sau
+      - tôi có việc rồi
+      - mình có việc rồi
+      - chút mình gặp lại 
+      - tôi ra ngoài một chút, chút vô nói chuyện sau
+      - tôi hiểu rồi, dừng ở đây đi
+      - dừng lại đi
+      - Tạm biệt nhé, hẹn gặp lại vào dịp khác
+      - Đã đến lúc phải nói lời chia tay
+      - Tôi rất vui được gặp bạn, nhưng giờ tôi phải đi rồi
+      - Tạm biệt, mong sớm gặp lại bạn
+      - Hẹn gặp lại, chúc bạn có một ngày vui vẻ
+      - chào bạn và hẹn gặp lại vào buổi ngày khám
+      - tạm biệt mày
+      - nghỉ đi
+      - tạm nghỉ
+      - kết thúc
+      - rất vui khi được bạn hỗ trợ, tạm biệt bạn
+  - intent: Thank
+    examples: |
+      - cảm ơn bạn nhé
+      - cảm ơn
+      - thank
+      - cám ơn
+      - tuyệt
+      - good
+      - tốt
+      - làm tốt lắm
+      - hay đấy
+      - rất tốt
+      - Cảm ơn sự hỗ trợ của bạn
+      - Cảm ơn bạn nhé
+      - Cảm ơn
+      - Xin chân thành cảm ơn
+      - Rất biết ơn bạn
+      - Tôi thật sự đánh giá cao sự giúp đỡ của bạn
+      - Tôi không thể đủ biết ơn bạn
+      - Bạn đã làm điều tuyệt vời, cảm ơn
+      - Cảm ơn bạn rất nhiều
+      - Tôi rất biết ơn sự hỗ trợ của bạn
+      - Rất chân thành cảm ơn sự hỗ trợ của bạn
+      - Yêu bạn lắm đó
+      - tuyệt lắm đó
+      - hay lắm
+      - bạn làm tốt lắm
+      - Rất cảm ơn bạn
+      - Xin cảm ơn
+      - Tôi biết ơn điều đó
+      - Cảm ơn bạn rất nhiều
+      - Cảm ơn vì sự giúp đỡ
+      - Cảm ơn vì đã làm điều đó
+      - Tôi muốn bày tỏ lòng biết ơn
+      - Cảm ơn vì đã làm điều tuyệt vời đó
+      - Làm ơn để tôi biết ơn
+      - Xin cảm ơn sự hỗ trợ của bạn
+      - Tôi cảm ơn món quà này
+      - Xin chân thành cảm ơn
+      - Cảm ơn vì đã ở đó cho tôi
+      - Tôi không thể đủ biết ơn
+      - Cảm ơn vì đã dành thời gian cho tôi
+      - Xin cảm ơn lòng tốt của bạn
+      - cảm ơn bạn đã giúp tôi.
+  - intent: suppot
+    examples: |
+      - bạn giúp được gì cho tôi
+      - bạn làm được gì
+      - help
+      - bot làm được gì
+      - khả năng của bạn là gì
+      - chức năng của bạn là gì
+      - bạn có tài gì
+      - bạn biết gì
+      - Bạn có thể giúp tôi như thế nào
+      - Nhiệm vụ chính của bạn là gì
+      - Bạn có khả năng làm gì
+      - Bot có thể làm những gì
+      - Tôi cần được giúp đỡ, bạn có thể làm gì
+      - Chức năng chính của bot là gì
+      - Bot có khả năng gì đặc biệt
+      - Bạn có kỹ năng hay tài năng nào đặc biệt
+      - Bạn biết những điều gì
+      - Tôi muốn biết về khả năng và chức năng của bạn.
+      - giúp tui với bot
+      - mày làm được những gì
+      - bạn giúp được gì cho tôi
+      - bạn làm được gì
+      - help bot
+      - bot làm được gì
+      - Tôi cần sự giúp đỡ
+      - Bạn có thể giúp tôi không?
+      - Cần hỗ trợ ở đây
+      - Tôi cần một chút giúp đỡ
+      - Làm ơn hỗ trợ tôi
+      - Bot có khả năng giúp đỡ không?
+      - Có thể bạn giúp tôi giải quyết vấn đề này không?
+      - Tôi gặp rắc rối và cần một số hướng dẫn
+      - Hãy giúp tôi hiểu rõ hơn về chức năng của bạn
+      - Tôi muốn biết bot có thể thực hiện các tác vụ gì khác nữa không
+      - Bạn có thể giúp tôi tìm thông tin về một chủ đề cụ thể không?
+  - intent: ask_name
+    examples: |
+      - tôi tên [an](name)
+      - tôi tên [nguyễn trường an](name)
+      - mình là [Lê Hoàng Hiếu Nghĩa](name)
+      - mình là [doãn Lê chí phong](name)
+      - cứ gọi mình là [Alix Mie](name)
+      - cứ gọi mình là [nguyễn thị tuyết ngọc](name)
+      - tớ là [nguyễn trường an](name)
+      - mình tên [lê tấn phong đạt](name)
+      - tui tên [nguyễn trần tất thành](name)
+      - mình tên [nguyễn thị cẩm hường](name)
+      - tui tên [trần thị quỳnh như](name)
+      - bà tên [lê trần tấn dũng](name)
+      - tao tên [phan nguyễn thanh tấn ngọc](name)
+      - tôi là [Thanh](name)
+      - tôi là [nguyễn cẩm loan em](name)
+      - [nguyễn thị công cân tôn nữa](name)
+      - [châu thế khanh](name)
+      - [võ trần tuấn anh](name)
+      - [Khanh](name) là tên của mình
+      - xưng mình là [ngọc](name)
+      - biệt danh tui là [hào](name)
+      - mình là [Thế Khanh](name)
+      - tớ là [diệp ưng](name)
+      - mình tên [triệu phong](name)
+      - tui tên [quỳnh anh](name)
+      - bà tên [yến nhi](name)
+      - tao tên [tấn dũng](name)
+      - tôi là [Bình an](name)
+      - [Công Lí](name)
+      - xưng mình là [ngọc thảo](name)
+      - biệt danh tui là [anh Hào](name)
+      - mình tên thật là [châu thế khanh](name) hoặc cứ gọi mình là [khanh](name) cũng được
+      - mọi người gọi mình là [Bi](name) nhưng tên mình là [thắng](name)
+      - ở nhà mình tên [cu đen](name) nhưng trên trường mình tên [lý](name)
+      - Xin chào, tôi là [Nguyễn Thị Minh Hương](name), nhưng bạn có thể gọi tôi là [Hương](name).
+      - Tôi tên là [Lê Văn An](name), người thường gọi tôi là [An](name).
+      - Gọi tôi là [Trần Thanh Tùng](name), hay là [Thanh Tùng](name).
+      - Mình là [Trần Thị Bích Ngọc](name), bạn có thể gọi tôi là [Ngọc](name).
+      - Gọi tôi là [Vân Vy](name), bạn có thể viết tắt là [VV](name) nếu muốn.
+      - Mình tên là [Hải Đăng](name), bạn có thể gọi mình là [Đăng](name) hoặc [Hải](name) cũng được.
+      - Tên mình là [Ngọc Quỳnh](name), nhưng bạn cũng có thể gọi mình là [Quỳnh](name) hoặc [Ngọc](name) nhé.
+      - Gọi mình là [Phương Anh](name), nhưng bạn cũng có thể gọi mình là [Anh](name) hoặc [Phương](name) nếu muốn.
+      - Mình là [Nguyễn Huyền Trang](name), nhưng bạn cứ gọi mình là [Trang](name) cũng được.
+      - Tên mình là [Minh Khôi](name), còn bạn có thể gọi mình là [Khôi](name) thôi.
+      - Gọi mình là [Trung Hiếu](name), nhưng nếu thấy dài dòng bạn cũng có thể gọi [Hiếu](name) hoặc [Trung](name).
+      - Tên mình là [Nguyễn Mai Linh](name), nhưng bạn có thể gọi mình là [Linh](name) nếu muốn.
+      - Cứ gọi mình là [Huy Hoàng](name), không cần cầu kỳ đâu.
+      - Mình tên là [Ngọc Anh](name), bạn cũng có thể gọi mình là [Anh](name) hoặc [Ngọc](name) nhé.
+      - mình là [Phong](name)
+      - mình là [Nguyễn triệu phong](name)
+      - cứ gọi mình là [Alix Milk](name)
+      - cứ gọi mình là [Mèo](name)
+      - Tên mình là [Trang Nguyễn](name)
+      - Gọi mình là [Hồng Anh](name)
+      - Mình tên là [Ngọc Trinh](name)
+      - Bạn có thể gọi mình là [Vân Anh](name)
+      - Gọi mình là [Tùng Lâm](name)
+      - Tên mình là [Thiên Long](name)
+      - Tên bà tôi là [nguyen thi men](name)
+      - tên của ba tôi là [nguyễn văn hải](name), còn được gọi là [2 hải](name)
+      - [nguyen thi minh khê]
+      - mình là [Lê Hoàng Hiếu Nghĩa](name)
+      - mình là [doãn Lê chí phong](name)
+      - cứ gọi mình là [Alix Mie](name)
+      - cứ gọi mình là [nguyễn thị tuyết ngọc](name)
+      - tớ là [nguyễn trường an](name)
+      - mình tên [lê tấn phong đạt](name)
+      - tui tên [nguyễn trần tất thành](name)
+      - mình tên [nguyễn thị cẩm hường](name)
+      - tui tên [trần thị quỳnh như](name)
+      - bà tên [lê trần tấn dũng](name)
+      - tao tên [phan nguyễn thanh tấn ngọc](name)
+      - tôi là [Thanh](name)
+      - tôi là [nguyễn cẩm loan em](name)
+      - [nguyễn thị công cân tôn nữa](name)
+      - [châu thế khanh](name)
+      - [võ trần tuấn anh](name)
+      - [Khanh](name) là tên của mình
+      - xưng mình là [ngọc](name)
+      - biệt danh tui là [hào](name)
+      - mình là [Thế Khanh](name)
+      - tớ là [diệp ưng](name)
+      - mình tên [triệu phong](name)
+      - tui tên [quỳnh anh](name)
+      - bà tên [yến nhi](name)
+      - tao tên [tấn dũng](name)
+      - tôi là [Bình an](name)
+      - [Công Lí](name)
+      - xưng mình là [ngọc thảo](name)
+      - biệt danh tui là [anh Hào](name)
+      - mình tên thật là [châu thế khanh](name) hoặc cứ gọi mình là [khanh](name) cũng được
+      - mọi người gọi mình là [Bi](name) nhưng tên mình là [thắng](name)
+      - ở nhà mình tên [cu đen](name) nhưng trên trường mình tên [lý](name)
+      - Xin chào, tôi là [Nguyễn Thị Minh Hương](name), nhưng bạn có thể gọi tôi là [Hương](name).
+      - Tôi tên là [Lê Văn An](name), người thường gọi tôi là [An](name).
+      - Gọi tôi là [Trần Thanh Tùng](name), hay là [Thanh Tùng](name).
+      - Mình là [Trần Thị Bích Ngọc](name), bạn có thể gọi tôi là [Ngọc](name).
+      - Gọi tôi là [Vân Vy](name), bạn có thể viết tắt là [VV](name) nếu muốn.
+      - Mình tên là [Hải Đăng](name), bạn có thể gọi mình là [Đăng](name) hoặc [Hải](name) cũng được.
+      - Tên mình là [Ngọc Quỳnh](name), nhưng bạn cũng có thể gọi mình là [Quỳnh](name) hoặc [Ngọc](name) nhé.
+      - Gọi mình là [Phương Anh](name), nhưng bạn cũng có thể gọi mình là [Anh](name) hoặc [Phương](name) nếu muốn.
+      - Mình là [Nguyễn Huyền Trang](name), nhưng bạn cứ gọi mình là [Trang](name) cũng được.
+      - Tên mình là [Minh Khôi](name), còn bạn có thể gọi mình là [Khôi](name) thôi.
+      - Gọi mình là [Trung Hiếu](name), nhưng nếu thấy dài dòng bạn cũng có thể gọi [Hiếu](name) hoặc [Trung](name).
+      - Tên mình là [Nguyễn Mai Linh](name), nhưng bạn có thể gọi mình là [Linh](name) nếu muốn.
+      - Cứ gọi mình là [Huy Hoàng](name), không cần cầu kỳ đâu.
+      - Mình tên là [Ngọc Anh](name), bạn cũng có thể gọi mình là [Anh](name) hoặc [Ngọc](name) nhé.
+      - mình là [Phong](name)
+      - mình là [Nguyễn triệu phong](name)
+      - cứ gọi mình là [Alix Milk](name)
+      - cứ gọi mình là [Mèo](name)
+      - Tên mình là [Trang Nguyễn](name)
+      - Gọi mình là [Hồng Anh](name)
+      - Mình tên là [Ngọc Trinh](name)
+      - Bạn có thể gọi mình là [Vân Anh](name)
+      - Gọi mình là [Tùng Lâm](name)
+      - Tên mình là [Thiên Long](name)
+      - Tên bà tôi là [nguyen thi men](name)
+      - tên của ba tôi là [nguyễn văn hải](name), còn được gọi là [2 hải](name)
+      - [nguyen thi minh khê]
+
+  - intent: ask_name_appointment
+    examples: |
+      - mình là [Lê Hoàng Hiếu Nghĩa](name) và mình muốn đặt lịch.
+      - mình là [doãn Lê chí phong](name) mình muốn đặt lịch.
+      - cứ gọi mình là [Alix Mie](name), mình muốn đặt lịch.
+      - cứ gọi mình là [nguyễn thị tuyết ngọc](name), mình muốn đặt lịch.
+      - tớ là [nguyễn trường an](name), tớ muốn đặt lịch.
+      - mình tên [lê tấn phong đạt](name), mình muốn đặt lịch.
+      - tui tên [nguyễn trần tất thành](name) tui muốn đặt lịch.
+      - mình tên [nguyễn thị cẩm hường](name) mình muốn đặt lịch.
+      - tui tên [trần thị quỳnh như](name) tui muốn đặt lịch.
+      - bà tên [lê trần tấn dũng](name) tôi muốn đặt lịch hộ như thế nào.
+      - tao tên [phan nguyễn thanh tấn ngọc](name) tao muốn đặt lịch khám ở bệnh viện này.
+      - tôi là [Thanh](name) tôi muốn đặt lịch.
+      - tôi là [nguyễn cẩm loan em](name) tôi muốn đặt lịch.
+      - [nguyễn thị công cân tôn nữa](name) tôi muốn đặt lịch.
+      - [Khanh](name) là tên của mình, mình muốn đặt lịch như thế nào?.
+      - xưng mình là [ngọc](name) mình muốn đặt lịch khám.
+      - tui là [hào](name) tôi muốn đặt lịch.
+      - mình là [Thế Khanh](name)
+      - tớ là [diệp ưng](name) tớ muốn đặt lịch khám
+      - mình tên [triệu phong](name), đặt lịch khám như thế nào
+      - tui tên [quỳnh anh](name), tui muốn đặt lịch khám.
+      - bà tôi tên [yến nhi](name), tôi đặt lịch khám cho bà tôi như thế nào?
+      - tao tên [tấn dũng](name) tao muôn mày đặt lịch khám
+      - tôi là [Bình an](name) tôi  đặt lịch khám.
+      - [Công Lí](name) đặt lịch như thế nào
+      - xưng mình là [ngọc thảo](name)
+      - mình tên thật là [châu thế khanh](name) hoặc cứ gọi mình là [khanh](name) cũng được , tôi muốn đặt lịch.
+      - mọi người gọi mình là [Bi](name) nhưng tên mình là [thắng](name). mình muốn đặt lịch khám như thế nào
+      - mình muốn đặt lịch khám như thế nào. Khi mọi người gọi mình là [cu tí](name) nhưng tên mình là [huy](name). 
+      - ở nhà mình tên [cu đen](name) nhưng tên thật mình là [nguyễn văn bá](name). mình muốn đặt lịch khám có được không
+      - Xin chào, tôi là [Nguyễn Thị Minh Hương](name), nhưng bạn có thể gọi tôi là [Hương](name). tôi muốn đặt lịch.
+      - Tôi tên là [Lê Văn An](name), người thường gọi tôi là [An](name). mình muốn đặt lịch như thế nào?
+      - Gọi tôi là [Trần Thanh Tùng](name), hay là [Thanh Tùng](name). Tôi muốn đặt lịch.
+      - Tôi muốn đặt lịch và Gọi tôi là [Trần Thanh Sơn](name), hay là [Thanh Sơn](name).
+      - Mình là [Trần Thị Bích Ngọc](name). Tôi muốn đặt lịch, bạn có thể gọi tôi là [Ngọc](name).
+      - Gọi tôi là [Vân Vy](name), bạn có thể viết tắt là [VV](name) đặt lịch như thế nào.
+      - Tên mình là [Ngọc Quỳnh](name), nhưng bạn cũng có thể gọi mình là [Quỳnh](name) hoặc [Ngọc](name) nhé và mình muốn đặt lịch như thế nào?
+      - Mình muốn đặt lịch và Gọi mình là [Phương Anh](name), nhưng bạn cũng có thể gọi mình là [Anh](name) hoặc [Phương](name) nếu muốn.
+      - Cứ gọi mình là [Huy Hoàng](name), không cần cầu kỳ đâu và mình muốn đặt lịch khám bênh của bệnh viện
+      - Mình muốn đặt lịch khám, tên mình là [khanh](name)
+      - Mình là [Nguyễn Xuân Phúc](name), Mình muốn đặt lịch khám.
+      - Có thể ghi tên mình vào danh sách đặt lịch khám không? Mình là [doãn chí phong](name)
+      - Tôi muốn đặt hẹn, tên là [Alix Mie](name)
+      - Có thể đặt lịch khám với tên [nguyen thi cam loan em](name) không?
+      - Mình là [Khanh Alic](name), có thể đặt lịch khám cho mình không?
+      - Tên tôi là [phúc](name), mình muốn đặt lịch khám.
+      - Mình tên [đạt](name) và muốn đặt lịch khám .
+      - Tui là [Thanh Phong](name), có thể sắp xếp lịch khám cho tui không?
+      - Tôi muốn đặt lịch khám với tên [nguyễn văn an](name) không?
+      - Mình tên [tiến đạt](name), muốn đặt lịch khám với bác sĩ.
+      - Tui tên [quỳnh](name) và muốn đặt lịch khám.
+      - Bà tên [yến](name), có thể giúp bà đặt lịch khám không?
+      - Mình là [Thảo](name), có thể đặt lịch khám cho mình không?
+      - bạn tôi là [nguyen thi thao mai](name), tôi có thể đặt lịch cho bạn tôi không?
+      - [nguyễn thị minh khê](name), đặt lịch khám như thế nào?
+      - [nguyễn thành công](name), đặt lịch khám.
+      - [lê thị thu cuc](name), đặt lịch.
+  - intent: yêu_cầu_lịch_hẹn
+    examples: |
+      - Tôi muốn đặt lịch khám vào [ngày mai](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 2](thu) vào ca [sáng](ca).
+      - Tôi đặt lịch khám vào [thứ 2](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 3](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 4](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 5](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 6](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 7](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [chủ nhật](thu) vào ca [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [ngày mai](thu)  ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 2](thu) vào ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 3](thu) vào ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 4](thu) vào ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 5](thu) vào ca  [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 6](thu) vào ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 7](thu) vào ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [chủ nhật](thu) vào ca [trưa](ca).
+      - Tôi muốn đặt lịch khám vào [ngày mai](thu) ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 2](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 3](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 4](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 5](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 6](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 7](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [chủ nhật](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [ngày mai](thu) ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 2](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 3](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 4](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 5](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 6](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 7](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [chủ nhật](thu) vào ca [sáng](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [ngày mai](thu) ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 2](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 3](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 4](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 5](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 6](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 7](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [chủ nhật](thu) vào ca [trưa](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [ngày mai](thu) ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 2](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 3](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 4](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 5](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 6](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [thứ 7](thu) vào ca [tối](ca).
+      - Làm ơn Tôi muốn đặt lịch khám vào [chủ nhật](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [ngày mai](thu) ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [thứ 2](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [thứ 3](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [thứ 4](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [thứ 5](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [thứ 6](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [thứ 7](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [chủ nhật](thu) vào ca [sáng](ca).
+      - mình muốn đặt lịch khám vào [ngày mai](thu) ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [thứ 2](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [thứ 3](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [thứ 4](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [thứ 5](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [thứ 6](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [thứ 7](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [chủ nhật](thu) vào ca [trưa](ca).
+      - mình muốn đặt lịch khám vào [ngày mai](thu) ca [tối](ca).
+      - mình muốn đặt lịch khám vào [thứ 2](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [thứ 3](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [thứ 4](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [thứ 5](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [thứ 6](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [thứ 7](thu) vào ca [tối](ca).
+      - mình muốn đặt lịch khám vào [chủ nhật](thu) vào ca [tối](ca).
+      - Tôi muốn đặt lịch khám vào [thứ 7](thu) [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [chủ nhật](thu) [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [Ngày mai](thu) [sáng](ca).
+      - Tôi muốn đặt lịch khám vào [chủ nhật](thu) [tối](ca).
+      - tao muốn đặt lịch khám vào [ngày mai](thu) ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [thứ 2](thu) vào ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [thứ 3](thu) vào ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [thứ 4](thu) vào ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [thứ 5](thu) vào ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [thứ 6](thu) vào ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [thứ 7](thu) vào ca [sáng](ca).
+      - tao muốn đặt lịch khám vào [chủ nhật](thu) vào ca [sáng](ca).
+  - intent: dat_lich_kham # xong
+    examples: |
+      - Tôi muốn đặt lịch khám làm như thê nào. 
+      - Làm ơn cho tôi đặt lịch khám 
+      - Làm ơn Tôi muốn đặt lịch khám làm như thê nào. 
+      - Tôi muốn đặt lịch khám với bệnh viện.
+      - Tôi muốn đặt lịch khám
+      - Tôi muốn đặt lịch khám phải làm như thê nào.
+      - Tôi muốn đặt lịch khám phải sao.
+      - Tôi muốn đặt lịch làm như thê nào. 
+      - Làm ơn cho tôi đặt lịch. 
+      - Làm ơn Tôi muốn đặt lịch  làm như thê nào. 
+      - Tôi muốn đặt lịch với bệnh viện.
+      - Tôi muốn đặt lịch.
+      - Tôi muốn đặt lịch phải làm như thê nào.
+      - Tôi muốn đặt lịch phải sao.
+      - bot tôi muôn đặt lịch với phòng khám .
+      - tôi muốn đặt lịch khám cho người thân.
+      - tôi muốn đặt lịch cho bạn tôi .
+      - tôi muốn đặt lịch cho cha tôi.
+      - tôi muốn đặt lịch cho má tôi.
+      - tôi muốn đặt lịch cho mẹ tôi.
+      - tôi muốn đặt lịch cho ba tôi.
+      - mình muốn đặt lịch cho bạn mình.
+      - mình muốn đặt lịch cho cha mình.
+      - mình muốn đặt lịch cho má mình.
+      - mình muốn đặt lịch cho mẹ mình.
+      - mình muốn đặt lịch cho ba mình.
+      - tao muốn đặt lịch cho bạn tao .
+      - tao muốn đặt lịch cho cha tao.
+      - tao muốn đặt lịch cho má tao.
+      - tao muốn đặt lịch cho mẹ tao.
+      - tao muốn đặt lịch cho ba tao.
+      - đặt lịch khám như thế nào?
+      - đặt lịch khám với phòng khám như nào?
+      - tôi muốn đặt lịch khám không biêt phải làm sao ?
+  - intent: dat_lich_kham_BS
+    examples: |
+      - tôi muốn đặt lịch với [ngô quý châu](bacsi)
+      - tao muốn đặt lịch với [ngô quý châu](bacsi)
+      - tui muốn đặt lịch với [Nguyễn Thanh Liêm](bacsi)
+      - mình muốn đặt lịch với [ngô quý châu](bacsi)
+      - Tôi muốn đặt lịch khám với bác sĩ [Nguyễn Thanh Liêm](bacsi) làm như thê nào. 
+      - Làm ơn cho tôi đặt lịch khám với bác sĩ [ Đỗ Thị Phương Mai ](bacsi)
+      - Làm ơn Tôi muốn đặt lịch khám với bác sĩ [ Ngô Quý Châu](bacsi) làm như thê nào. 
+      - Tôi muốn đặt lịch khám của bác sĩ [Nguyễn Tài Thu ](bacsi).
+      - Tôi muốn đặt lịch khám với [ Nguyễn Văn Thạch ](bacsi)  phải làm như thê nào.
+      - Tôi muốn đặt lịch khám bác sĩ [Nguyễn Văn Thạch](bacsi) phải sao.
+      - Tôi muốn đặt lịch làm [Trần Ngọc Lương](bacsi) như thê nào. 
+      - Làm ơn cho tôi đặt lịch [Trần Ngọc Lương](bacsi). 
+      - Làm ơn Tôi muốn đặt lịch của bác sĩ [Trần nguyễn Ngọc Lương](bacsi)  làm như thê nào. 
+      - Tôi muốn đặt lịch bác sĩ [ Nguyễn Viết Tiến](bacsi).
+      - Tôi muốn đặt lịch với [ Nguyễn Viết Tiến](bacsi) phải làm như thê nào.
+      - Tôi muốn đặt lịch với bác sĩ  [Trần nguyễn Ngọc Lương](bacsi) phải sao.
+      - bot tôi muôn đặt lịch với [Trần nguyễn Ngọc Lương](bacsi).
+      - tôi muốn đặt lịch khám cho người thân với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - tôi muốn đặt lịch cho bạn tôi với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - tôi muốn đặt lịch cho cha tôi với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - tôi muốn đặt lịch cho má tôi với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - tôi muốn đặt lịch cho mẹ tôi với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - tôi muốn đặt lịch cho ba tôi với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - mình muốn đặt lịch cho bạn mình với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - mình muốn đặt lịch cho cha mình với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - mình muốn đặt lịch cho má mình với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - mình muốn đặt lịch cho mẹ mình với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - mình muốn đặt lịch cho ba mình với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn đặt lịch cho bạn tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn đặt lịch cho cha tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn đặt lịch cho má tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn đặt lịch cho mẹ tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn đặt lịch cho ba tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tôi muốn đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho bạn tôi.
+      - tôi muốn đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho cha tôi.  
+      - tôi muốn đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho má tôi.  
+      - tôi muốn đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho mẹ tôi.  
+      - tôi muốn đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho ba tôi. 
+      - mình muốn đặt lịch với bác sĩ Nguyễn Thanh Liêm](bacsi) của phòng khám cho bạn mình.  
+      - mình muốn đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho cha mình.  
+      - mình muốn đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho má mình.  
+      - mình muốn đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho mẹ mình. 
+      - mình muốn đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho ba mình.  
+      - tao muốn đặt lịch với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám cho bạn tao.  
+      - tao muốn đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho cha tao.  
+      - tao muốn đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho má tao.  
+      - tao muốn đặt lịch với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám cho mẹ tao.  
+      - tao muốn đặt lịch với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám cho ba tao.
+      - [Nguyễn Tiến Quyết](bacsi)
+      - [ngô quý châu](bacsi)
+      - [Trần nguyễn Ngọc Lương](bacsi)
+  - intent: Time_work_doctor
+    examples: |
+      - Tôi muốn lịch làm việc và đặt lịch với bác sĩ [ngô quý châu](bacsi) làm như thê nào
+      - Tôi muốn lịch làm việc của  bác sĩ [ngô quý châu](bacsi) làm như thê nào. 
+      - Tôi muốn lịch làm việc của  bác sĩ [ngô quý châu](bacsi) làm như thê nào. 
+      - Làm ơn cho tôi lịch làm việc của  bác sĩ [ ngô quý châu ](bacsi)
+      - Làm ơn Tôi muốn lịch làm việc của  bác sĩ [ Ngô Quý Châu](bacsi) làm như thê nào. 
+      - Tôi muốn lịch làm việc của  bác sĩ [Nguyễn Tài Thu ](bacsi).
+      - Tôi muốn lịch làm việc của  [ Nguyễn Văn Thạch ](bacsi)  phải làm như thê nào.
+      - Tôi muốn lịch làm việc của bác sĩ [Nguyễn Văn Thạch](bacsi) phải sao.
+      - Tôi muốn biết lịch làm việc [Trần Ngọc Lương](bacsi) trong tuần như thê nào. 
+      - Làm ơn cho tôi biết lịch làm việc [Trần Ngọc Lương](bacsi). 
+      - Làm ơn Tôi muốn biết lịch làm việc của bác sĩ [Trần nguyễn Ngọc Lương](bacsi)  làm như thê nào. 
+      - Tôi muốn giờ làm việc bác sĩ [ Nguyễn Viết Tiến](bacsi).
+      - Tôi muốn biết lịch làm việc với bác sĩ  [Trần nguyễn Ngọc Lương](bacsi) phải sao.
+      - bot tôi muôn lịch làm việc với [Trần nguyễn Ngọc Lương](bacsi).
+      - tôi muốn biết lịch làm việc và đặt lịch cho bạn tôi với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - tôi muốn biết lịch làm việc và đặt lịch cho cha tôi với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - tôi muốn  biết lịch làm việc và đặt lịch cho má tôi với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - tôi muốn  biết lịch làm việc và đặt lịch cho mẹ tôi với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - tôi muốn  biết lịch làm việc và đặt lịch cho ba tôi với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - mình muốn  biết lịch làm việc và đặt lịch cho bạn mình với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám.
+      - mình muốn  biết lịch làm việc và đặt lịch cho cha mình với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - mình muốn  biết lịch làm việc và đặt lịch cho má mình với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám.
+      - mình muốn  biết lịch làm việc và đặt lịch cho mẹ mình với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - mình muốn  biết lịch làm việc và đặt lịch cho ba mình với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn  biết lịch làm việc và đặt lịch cho bạn tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn  biết lịch làm việc và đặt lịch cho cha tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn  biết lịch làm việc và đặt lịch cho má tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn  biết lịch làm việc và đặt lịch cho mẹ tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tao muốn  biết lịch làm việc và đặt lịch cho ba tao với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám.
+      - tôi muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho bạn tôi.
+      - tôi muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho cha tôi.  
+      - tôi muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho má tôi.  
+      - tôi muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho mẹ tôi.  
+      - tôi muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Thanh Liêm](bacsi) của phòng khám cho ba tôi. 
+      - mình muốn  biết lịch làm việc và đặt lịch với bác sĩ Nguyễn Thanh Liêm](bacsi) của phòng khám cho bạn mình.  
+      - mình muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho cha mình.  
+      - mình muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho má mình.  
+      - mình muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho mẹ mình. 
+      - mình muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho ba mình.  
+      - tao muốn  biết lịch làm việc và đặt lịch với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám cho bạn tao.  
+      - tao muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho cha tao.  
+      - tao muốn  biết lịch làm việc và đặt lịch với bác sĩ [Nguyễn Tiến Quyết](bacsi) của phòng khám cho má tao.  
+      - tao muốn  biết lịch làm việc và đặt lịch với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám cho mẹ tao.  
+      - tao muốn  biết lịch làm việc và đặt lịch với bác sĩ [Trần nguyễn Ngọc Lương](bacsi) của phòng khám cho ba tao.
+      - tôi muốn biết lịch làm việc của bác sĩ [Nguyễn Tiến Quyết](bacsi)
+      - lịch làm việc của bác sĩ [ngô quý châu](bacsi)
+      - lịch làm việc của bác sĩ [Trần nguyễn Ngọc Lương](bacsi)
+      - mình muốn biết lịch làm việc [Trần nguyễn Ngọc Lương](bacsi)
+      - lịch khám của [Trần nguyễn Ngọc Lương](bacsi)
+      - giờ làm việc [Trần nguyễn Ngọc Lương](bacsi)
+      - tôi muốn biết lịch làm việc của bác sĩ [Trần nguyễn Ngọc Lương](bacsi)
+      - làm việc với [Trần nguyễn Ngọc Lương](bacsi)
+  - intent: List_BS # 30
+    examples: |
+      - danh sách bác sĩ
+      - có bác sĩ nào khác không?
+      - tôi muốn biết danh sách các bác sĩ
+      - danh sách chuyên gia y tế
+      - bác sĩ phòng khám
+      - bác sĩ của phòng khám?
+      - tất cả các bác sĩ của phòng khám?
+      - phòng khám có bao nhiêu bác sĩ?
+      - tôi muốn biết thông tin về bác sĩ của phòng khám?
+      - danh sách các bác sĩ phòng khám?
+      - có bác sĩ nào có kinh nghiệm lâu năm không?
+      - danh sách các bác sĩ thăm khám ?
+      - có bác sĩ nào tư vấn miễn phí không ?
+      - tìm kiếm bác sĩ
+      - tôi muốn biết bác sĩ của phòng khám?
+      - cần phải liên hệ với bác sĩ nào cho vấn đề y tế của tôi?
+      - tao muốn biết về bác sĩ của phòng khám như thế nào ?
+      - tìm hiểu về đội ngũ y tá và bác sĩ hỗ trợ
+      - bác sĩ nào có thể giúp đỡ với bệnh lý XYZ?
+      - bác sĩ nào chuyên môn về bệnh nghề nghiệp?
+      - danh sách các bác sĩ hỗ trợ?
+      - danh sách bác sĩ có thể hỗ trợ tôi
+      - tôi muốn biết tất cả thông tin về bác sĩ.
+      - danh sách các bác sĩ phòng khám
+      - phòng khám có bao nhiêu bác sĩ ?
+      - phòng khám có bác sĩ các bác sĩ nào?

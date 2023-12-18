@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-address",
+      "2": "I-address",
+      "3": "L-address",
+      "4": "U-address",
+      "5": "B-ca",
+      "6": "I-ca",
+      "7": "L-ca",
+      "8": "U-ca",
+      "9": "B-date_of_birth",
+      "10": "I-date_of_birth",
+      "11": "L-date_of_birth",
+      "12": "U-date_of_birth",
+      "13": "B-name",
+      "14": "I-name",
+      "15": "L-name",
+      "16": "U-name",
+      "17": "B-thu",
+      "18": "I-thu",
+      "19": "L-thu",
+      "20": "U-thu",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-address": 1,
+      "I-address": 2,
+      "L-address": 3,
+      "U-address": 4,
+      "B-ca": 5,
+      "I-ca": 6,
+      "L-ca": 7,
+      "U-ca": 8,
+      "B-date_of_birth": 9,
+      "I-date_of_birth": 10,
+      "L-date_of_birth": 11,
+      "U-date_of_birth": 12,
+      "B-name": 13,
+      "I-name": 14,
+      "L-name": 15,
+      "U-name": 16,
+      "B-thu": 17,
+      "I-thu": 18,
+      "L-thu": 19,
+      "U-thu": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

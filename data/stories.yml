@@ -1,0 +1,107 @@
+version: "3.1"
+stories:
+  - story: kb1
+    steps:
+      - intent: greet
+      - action: greet
+      - intent: ask_name
+      - action: ask_name
+      - intent: ask_name_appointment
+      - action: ask_name_appointment
+      - intent: Thank
+      - action: Thank
+      - action: goodbye
+
+  - story: kb2
+    steps:
+      - intent: greet
+      - action: greet
+      - intent: ask_name
+      - action: ask_name
+      - intent: dat_lich_kham
+      - action: action_dat_lich
+      - intent: ask_name_appointment
+      - action: ask_name_appointment
+      - intent: Thank
+      - action: Thank
+
+  - story: kb3
+    steps:
+      - intent: greet
+      - action: greet
+      - intent: ask_name
+      - action: ask_name
+      - intent: Time_work_doctor
+      - action: DoctorTime
+      - intent: dat_lich_kham
+      - action: action_dat_lich
+      - intent: Thank
+      - action: Thank
+  - story: kb4
+    steps:
+      - intent: greet
+      - action: greet
+      - intent: ask_name
+      - action: ask_name
+      - intent: dat_lich_kham
+      - action: action_dat_lich
+      - intent: Thank
+      - action: Thank
+  - story: kb5
+    steps:
+      - intent: greet
+      - action: greet
+      - intent: suppot
+      - action: Support
+      - intent: dat_lich_kham
+      - action: action_dat_lich
+      - intent: Time_work_doctor
+      - action: DoctorTime
+      - intent: Thank
+      - action: Thank
+  - story: tách từ và phân tích
+    steps:
+      - intent: yêu_cầu_lịch_hẹn
+      - action: yêu_cầu_lịch_hẹn_co_thời_gian
+
+  - story: ask_name
+    steps:
+      - intent: ask_name
+      - action: ask_name
+
+  - story: ask_name_appointment
+    steps:
+      - intent: ask_name_appointment
+      - action: ask_name_appointment
+  - story: BS_appointment
+    steps:
+      - intent: dat_lich_kham_BS
+      - action: appointment_bs
+  - story: doctor-time
+    steps:
+      - intent: Time_work_doctor
+      - action: DoctorTime
+
+  - story: List_doctor
+    steps:
+      - intent: List_BS
+      - action: ActionListDoctors
+  # - story: sad path 1
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: mood_unhappy
+  #     - action: utter_cheer_up
+  #     - action: utter_did_that_help
+  #     - intent: affirm
+  #     - action: utter_happy
+
+  # - story: sad path 2
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: mood_unhappy
+  #     - action: utter_cheer_up
+  #     - action: utter_did_that_help
+  #     - intent: deny
+  #     - action: utter_goodbye
